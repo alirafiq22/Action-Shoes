@@ -1,0 +1,49 @@
+<%= form_for(@category_master) do |f| %>
+  <% if @category_master.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@category_master.errors.count, "error") %> prohibited this category_master from being saved:</h2>
+
+      <ul>
+      <% @category_master.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Actioncode %><br />
+    <%= f.text_field :Actioncode %>
+  </div>
+  <div class="field">
+    <%= f.label :Colorname %><br />
+    <%= f.text_field :Colorname %>
+  </div>
+  <div class="field">
+    <%= f.label :Category %><br />
+    <%= f.text_field :Category %>
+  </div>
+  <div class="field">
+    <%= f.label :Sub_Cat %><br />
+    <%= f.text_field :Sub_Cat %>
+  </div>
+  <div class="field">
+    <%= f.label :AK_Status %><br />
+    <%= f.text_field :AK_Status %>
+  </div>
+  <div class="field">
+    <%= f.label :AK_Sub_Status %><br />
+    <%= f.text_field :AK_Sub_Status %>
+  </div>
+  <div class="field">
+    <%= f.label :Key %><br />
+    <%= f.text_field :Key %>
+  </div>
+  <div class="field">
+    <%= f.label :ImageURL %><br />
+    <%= f.text_field :ImageURL %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

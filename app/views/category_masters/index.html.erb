@@ -1,0 +1,47 @@
+<link href="/assets/CategoryMaster_Index.css" media="all" rel="stylesheet" type="text/css">
+<h1>Catalogue</h1>
+<div class="row">
+<table id="table1" data-toggle="table" data-query-params="queryParams" data-pagination="true" data-search="false" data-page-list="[10, 25, 50]" data-page-size="20" data-height="300">
+  <!--<tr>
+    <th>Actioncode</th>
+    <th>Colorname</th>
+    <th>Category</th>
+    <th>Sub cat</th>
+    <th>Ak status</th>
+    <th>Ak sub status</th>
+    <th>Key</th>
+    <th>Imageurl</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+-->
+<tbody>
+<% @category_masters.each_with_index do |category_master, index| %>
+  <%if index%2== 1%>
+  <tr>
+    <!--<td><%= category_master.Actioncode %></td>
+    <td><%= category_master.Colorname %></td>
+    <td><%= category_master.Category %></td>
+    <td><%= category_master.Sub_Cat %></td>
+    <td><%= category_master.AK_Status %></td>
+    <td><%= category_master.AK_Sub_Status %></td>
+    <td><%= category_master.Key %></td>
+    <td><%= category_master.ImageURL %></td>-->
+    <td><img src="<%= category_master.ImageURL %>" class="img-responsive" ></td>
+    <td><img src="<%= category_master.ImageURL %>" class="img-responsive" ></td>
+    <!--<td><%= link_to 'Show', category_master %></td>
+    <td><%= link_to 'Edit', edit_category_master_path(category_master) %></td>
+    <td><%= link_to 'Destroy', category_master, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+  </tr>
+  <%end%>
+<% end %>
+</tbody>
+</table>
+</div>
+<br />
+<!--<img src="../assets/SR562 BLACK.jpg">-->
+<!--<%= CategoryMaster.methods%>-->
+<!--<h2>Import Products</h2>-->
+
+<!--<%= link_to 'New Category master', new_category_master_path %>-->

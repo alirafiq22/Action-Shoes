@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Actioncode:</b>
+  <%= @category_master.Actioncode %>
+</p>
+
+<p>
+  <b>Colorname:</b>
+  <%= @category_master.Colorname %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @category_master.Category %>
+</p>
+
+<p>
+  <b>Sub cat:</b>
+  <%= @category_master.Sub_Cat %>
+</p>
+
+<p>
+  <b>Ak status:</b>
+  <%= @category_master.AK_Status %>
+</p>
+
+<p>
+  <b>Ak sub status:</b>
+  <%= @category_master.AK_Sub_Status %>
+</p>
+
+<p>
+  <b>Key:</b>
+  <%= @category_master.Key %>
+</p>
+
+<p>
+  <b>Imageurl:</b>
+  <%= @category_master.ImageURL %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_master_path(@category_master) %> |
+<%= link_to 'Back', category_masters_path %>

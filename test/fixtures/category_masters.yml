@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Actioncode: MyString
+  Colorname: MyString
+  Category: MyString
+  Sub_Cat: MyString
+  AK_Status: MyString
+  AK_Sub_Status: MyString
+  Key: MyString
+  ImageURL: MyString
+
+two:
+  Actioncode: MyString
+  Colorname: MyString
+  Category: MyString
+  Sub_Cat: MyString
+  AK_Status: MyString
+  AK_Sub_Status: MyString
+  Key: MyString
+  ImageURL: MyString
