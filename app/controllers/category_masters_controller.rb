@@ -18,8 +18,8 @@ class CategoryMastersController < ApplicationController
     #@category_masters = CategoryMaster.all
     #@category_masters = CategoryMaster.where.not(:AK_Status => 'Non Running')
      #@category_masters = CategoryMaster.where.not(CategoryMaster.arel_table[:AK_Status].not_eq('Non Running'))
-    @category_masters = CategoryMaster.where('Ak_Status != ? and ImageURL != ?', 'Non Running', '#N/A')
-      
+    @category_masters = CategoryMaster.where('Ak_Status != ? and ImageURL != ?', 'Non Running', '#N/A')#.sort(&:Actioncode)
+      @category_masters ||= @category_masters.sort(&:Actioncode)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @category_masters }
