@@ -60,7 +60,7 @@ ActionShoes::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-#config.assets.initialize_on_precompile = false
+config.assets.initialize_on_precompile = false
 #config.assets.js_compressor = Uglifier.new(harmony: true)
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
